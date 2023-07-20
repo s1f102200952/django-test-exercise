@@ -3,7 +3,7 @@ import dj_database_url
 from .settings import *
 
 DEBUG = True
-SECRET = os.environ['SECRET_KEY']
+SECRET_KEY = os.environ['SECRET_KEY']
 ALLOWED_HOSTS.append(os.environ['RENDER_EXTERNAL_HOSTNAME'])
 
 MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
